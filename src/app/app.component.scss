@@ -1,0 +1,359 @@
+@font-face {
+  font-family: lato;
+  src: url('/assets/Graphik-Extralight.otf') format("opentype");
+}
+.min-70{
+  min-height: 70px;
+
+}
+.color-verde{
+  color:#02b300;
+}
+.texto-footer-verde{
+  color:#02b300;
+  padding-left: 30px;
+}
+.texto-footer-twitter{
+  color:#0790af;
+  padding-left: 10px;
+}
+.texto-footer-linkedin{
+  color:#478bdb;
+  padding-left: 10px;
+}
+.texto-footer-youtube{
+  color:#a24d4d ;
+  padding-left: 10px;
+}
+.texto-footer-facebook{
+  color:#33408a;
+  padding-left: 10px;
+}
+.color-white{
+  color:white;
+}
+.icono-flotante{
+  position:absolute;
+}
+.footer{
+  background-color: black;
+  height: auto;
+  min-height: 70px;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+.nombre_persona{
+  color: white;
+  font-weight: bolder;
+  font-size:18px;
+}
+.comentario_persona{
+  color: white;
+    font-size: 25px;
+    padding-bottom: 80px;
+}
+.imagen_proyecto{
+  width:100%;
+}
+.imagen_logo{
+width:250px;
+}
+.marginl-40{
+  margin-left: 60px;
+}
+.cliente1{
+  background-image: url("/assets/images/persona1.jpg") ;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  height: 600px;
+  opacity: 0.8;
+}
+.cliente2{
+  background-image: url("/assets/images/persona2.jpg") ;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  height: 600px;
+  opacity: 0.8;
+}
+.cliente3{
+  background-image: url("/assets/images/persona3.jpg") ;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  height: 600px;
+  opacity: 0.8;
+}
+
+//Se Usa los contenedores azul rojo blanco e internamente
+.azul{
+  background-color: #223b82;
+  height:auto;
+  & .titulo_proyecto{
+    color: white;
+    font-size: 35px;
+    line-height: 20px;
+  }
+  & .descripcion_proyecto{
+    color: white;
+    font-size:20px;
+    }
+  & .button-proyecto{
+    text-align: center;
+    border-radius: 7px;
+    background-color: white;
+    border: none;
+    height: 50px;
+    width: 230px;
+    font-size: 12px;
+    color: #223b82;
+    font-weight: bold;
+
+  }
+
+}
+.rojo{
+  background-color: #c92c3a;
+  height:auto;
+  & .titulo_proyecto{
+    color: white;
+    font-size: 35px;
+    line-height: 20px;
+  }
+  & .descripcion_proyecto{
+    color: white;
+    font-size:20px;
+    }
+  & .button-proyecto{
+    text-align: center;
+    border-radius: 7px;
+    background-color: white;
+    border: none;
+    height: 50px;
+    width: 230px;
+    font-size: 12px;
+    color: #c92c3a;
+    font-weight: bold;
+
+  }
+}
+.blanco{
+ background-color: #ffffff;
+ height:auto;
+ & .titulo_proyecto{
+  font-size: 35px;
+  line-height: 20px;
+}
+.button-proyecto{
+  text-align: center;
+  border-radius: 7px;
+  background-color: #c92c3a;
+  border: none;
+  height: 50px;
+  width: 230px;
+  font-size: 12px;
+  color: #ffffff;
+  font-weight: bold;
+
+}
+& .descripcion_proyecto{
+
+  font-size:20px;
+}
+
+}
+.container-info1{
+background-color: #3b4148;
+height:250px;
+text-align: center;
+}
+.container-info2{
+  background-color: #161c21;
+  height:250px;
+  text-align: center;
+}
+.container-info3{
+  background-color: #202a37;
+  height:250px;
+  text-align: center;
+}
+p{
+  font-family: lato !important;
+}
+span{
+  font-family: lato !important;
+}
+a{
+  font-family: lato !important;
+}
+.parrafo-blanco{
+  color:white;
+  text-align:center;
+}
+.b-black{
+  background-color: black !important;
+  padding:20px;
+  text-align: center;
+  & .p-blanco{
+    color:white;
+    & span{
+      font-weight: bold;
+    }
+  }
+}
+.imageLogo {
+  width: 50px;
+  height: 50px;
+}
+.font-weight{
+  font-weight: bolder;
+}
+.border-green{
+  border-bottom:4px solid #02b300;
+  width:70px;
+  margin:auto;
+
+}
+.icon-rojo{
+  color:red;
+}
+.transparent{
+  background-color: transparent !important;
+}
+
+.backgroundHome {
+  background-image: url("/assets/images/background.jpg") ;
+  background-position: bottom; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.nav-link{
+  color: #dfdbdb !important;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.color-white{
+  color:white !important;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link{
+  font-weight: bolder !important;
+  color:white !important;
+  border-bottom: 4px solid #48e120;
+}
+
+.size-contain{
+  height: 60vh;
+}
+
+.tittle1{
+  color: white;
+  font-size: 35px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.tittle2{
+  color: #48e120;
+  font-size: 40px;
+  font-weight: 600;
+
+}
+
+.button1green{
+  text-align: center;
+  border-radius: 7px;
+  background-color: #02b300;
+  border: none;
+  height: 50px;
+  width: 230px;
+  font-size: 12px;
+  color: white;
+  font-weight: bold;
+
+}
+
+
+.button2green{
+  text-align: center;
+  border-radius: 7px;
+  background-color: #02b300;
+  border: none;
+  height: 40px;
+  width: 140px;
+  font-size: 11px;
+  color: white;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.button1transparent{
+  text-align: center;
+  border-radius: 7px;
+  background-color: transparent;
+  border: 1px solid #48e120;
+  height: 40px;
+  width: 170px;
+  font-size: 11px;
+  color: #48e120;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.border-none{
+  border: none;
+}
+.titulo-contenedores{
+  color:#10910f;
+  font-size:25px;
+}
+.bg-gray{
+  background-color:#273138;
+}
+
+.p-mobile{
+  padding-top:60px;
+}
+.description{
+  color:white;
+}
+@media only screen and (max-width: 425px) {
+  .tittle1{
+    color: white;
+    font-size: 21px;
+    text-align: center;
+    line-height: 20px;
+  }
+  .imagen_logo{
+    width:190px;
+    }
+  .tittle2{
+    color: #48e120;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align:center;
+  }
+  .titulo-contenedores{
+    color:#10910f;
+    font-size:18px;
+  }
+  .titulo_proyecto{
+    font-size: 20px !important;
+  }
+  .justify-mobile{
+    justify-content:center;
+  }
+  .azul{
+    padding: 40px;
+  }
+  .rojo{
+    padding: 40px;
+  }
+  .blanco{
+    padding: 40px;
+  }
+
+}

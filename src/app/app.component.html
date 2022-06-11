@@ -1,0 +1,229 @@
+<div>
+  <div class = "backgroundHome">
+      <nav class="navbar navbar-expand-lg bg-light transparent">
+      <div class="container-fluid">
+        <img src="/assets/images/Logo.png" class="imageLogo">
+        <button class="navbar-toggler border-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <i class = "material-icons color-white">menu</i>
+        </button>
+        <div class="collapse navbar-collapse align-self-end justify-content-end" id="navbarNavAltMarkup" >
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">inicio</a>
+            <a class="nav-link" href="#">nosotros</a>
+            <a class="nav-link" href="#">servicios</a>
+            <a class="nav-link" href="#">casos de éxito</a>
+            <a class="nav-link" href="#">únete al equipo</a>
+            <a class="nav-link" href="#">contacto</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="container-fluid size-contain d-flex justify-content-center align-items-center">
+        <div>
+          <div class=" d-flex justify-content-center align-items-center">
+            <span class="tittle1">
+              Nos especializamos en
+            </span>
+          </div>
+          <div class=" d-flex justify-content-center align-items-center">
+            <span class="tittle2">
+              interfaces digitales que los usuarios aman
+            </span>
+        </div>
+          <div class=" d-flex justify-content-center align-items-center pt-5">
+            <button class="button1green">HABLEMOS DE TU PROYECTO</button>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid b-black d-flex justify-content-center align-items-center d-flex">
+    <i class="material-symbols-outlined icon-rojo">graphic_eq</i>
+    <p class = "p-blanco m-0"><span>En directo</span> - SOHO está presente en el <span>DIGITAL BANK MONTEVIDEO.</span> "Experiencia de Usuario" por Alvaro Añón (SEO DE SOHO)</p>
+    <button class="button2green">VER EVENTO</button>
+    <button class="button1transparent">PRÓXIMOS EVENTOS</button>
+  </div>
+
+
+  <div class="container-fluid  bg-gray d-flex justify-content-center align-items-center">
+    <div class = "p-mobile">
+      <p class = "tittle1 font-weight">17 años de experiencia en post de tu proyecto</p>
+      <div class = "border-green">
+      </div>
+      <div class = "row justify-content-center">
+        <div class = "col-12 col-md-8 pt-4 pb-5">
+          <p class = "parrafo-blanco">
+            Especializados desde el 1996 en usabilidad, experiencia de usuario (UX) y diseño de experiencias de proyectos
+            digitales. Aportamos estrategía e innovación centrada en el usuario y los objetivos de negocio
+            de tu proyecto. Cotrabajando mejoraremos tu tasa de conversión, KPI´s, ROI y los resultados de tu actual
+            publicidad PPC(pay per click)
+          </p>
+        </div>
+      </div>
+      <div class = "row pb-3">
+        <div class = "col-md-4 container-info1 d-flex align-items-center justify-content-center">
+          <div>
+            <div class = "d-flex justify-content-center align-items-center">
+              <p class = "titulo-contenedores">Estrategía, usabilidad y ux</p>
+            </div>
+            <div class = "d-flex justify-content-center align-items-center">
+              <p class = "description">Te ofrecemos excelente usabilidad y experiencia de usuario en tu proyecto junto a una visión innovadora</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class = "col-md-4 container-info2 d-flex align-items-center justify-content-center">
+          <div>
+            <div class = "d-flex justify-content-center align-items-center">
+              <p class = "titulo-contenedores">Mejoramos la experiencia</p>
+            </div>
+            <div class = "d-flex justify-content-center align-items-center">
+              <p class = "description">Tangibilizamos tu proyecto digital a través de un diseño centrado en el usuario y técnicas avanzadas</p>
+            </div>
+          </div>
+        </div>
+        <div class = "col-md-4 container-info3 d-flex align-items-center justify-content-center">
+          <div>
+            <div class = "d-flex justify-content-center align-items-center">
+              <p class = "titulo-contenedores">Medición continua de objetivos</p>
+            </div>
+            <div class = "d-flex justify-content-center align-items-center">
+              <p class = "description">Implementación, testing con usuarios y medición continua son necesarias para garantizar el éxito de tu proyecto</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "pt-5">
+        <p class = "tittle1 font-weight">Proyectos destacados</p>
+        <div class = "border-green">
+        </div>
+        <div class = "row justify-content-center">
+          <div class = "col-12 col-md-8 pt-4 pb-5">
+            <p class = "parrafo-blanco">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac ipsum velit. Nulla lacinia neque dui. Nulla interdum eget metus at facilisis. Duis vel bibendum nisi, eu accumsan arcu. Nam sagittis viverra turpis, sit amet tempus lorem ullamcorper sed. Phasellus semper dictum urna vel pharetra. Vestibulum posuere lorem lacus,
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid p-0">
+    <div [class] = "proyecto.class" *ngFor = "let proyecto of proyectos; let i = index">
+      <div class = "row" *ngIf="posicionamiento1(i+1)">
+        <div class = "col-md-6 py-5">
+          <img [src] = "proyecto.imageRoute" class = "imagen_proyecto">
+        </div>
+        <div class = "col-md-6 d-flex align-items-center justify-mobile py-5">
+          <div class = "marginl-40 col-md-9 col-12">
+            <div><img [src] = "proyecto.logoRoute" class = "imagen_logo"></div>
+
+            <p class = "titulo_proyecto pt-3">{{proyecto.tittle}}</p>
+            <p class = "descripcion_proyecto">
+              {{proyecto.description}}
+            </p>
+            <button class="button-proyecto mt-4">VER DETALLES</button>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class = "row" *ngIf="!posicionamiento1(i+1)">
+
+        <div class = "col-md-6 d-flex align-items-center justify-content-center py-5">
+          <div class = "marginl-40 col-md-9 col-12">
+            <div><img [src] = "proyecto.logoRoute" class = "imagen_logo"></div>
+
+            <p class = "titulo_proyecto pt-3">{{proyecto.tittle}}</p>
+            <p class = "descripcion_proyecto">
+              {{proyecto.description}}
+            </p>
+            <button class="button-proyecto mt-4">VER DETALLES</button>
+
+          </div>
+        </div>
+        <div class = "col-md-6 py-5">
+          <img [src] = "proyecto.imageRoute" class = "imagen_proyecto">
+
+        </div>
+      </div>
+
+      <div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid  bg-gray d-flex justify-content-center align-items-center pb-5">
+    <div class = "p-mobile w-100">
+          <p class = "tittle1 font-weight">Lo que dicen nuestros clientes</p>
+          <div class = "border-green">
+          </div>
+
+          <div class = "row pt-5">
+            <div class = "col-md-4 cliente1 d-flex justify-content-center align-items-end">
+              <div class = "text-center">
+                <p class = "comentario_persona">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac ipsum velit."</p>
+                <p class = "nombre_persona">Cristobal Hernandez - CEO Copec</p>
+              </div>
+
+            </div>
+            <div class = "col-md-4 cliente2  d-flex justify-content-center align-items-end">
+              <div class = "text-center">
+                <p class = "comentario_persona">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac ipsum velit."</p>
+                <p class = "nombre_persona">Maria Paz Segers - Lead Digital BBVA</p>
+              </div>
+
+            </div>
+            <div class = "col-md-4 cliente3  d-flex justify-content-center align-items-end">
+              <div class = "text-center">
+                <p class = "comentario_persona">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac ipsum velit."</p>
+                <p class = "nombre_persona">Renato Buscañán - Lead Digital BBVA</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class=" d-flex justify-content-center align-items-center py-5">
+            <button class="button1green">HABLEMOS DE TU PROYECTO</button>
+          </div>
+
+
+    </div>
+
+  </div>
+  <div>
+
+    <footer class = "footer">
+
+      <div class = "row min-70">
+        <div class = "col-md-4 d-flex justify-content-start align-items-center">
+          <p class = "color-white m-0"><span class = "font-weight">&copy;2017</span> SOHO internet + humana</p>
+        </div>
+        <div class = "col-md-4 d-flex justify-content-center align-items-center">
+          <p class = "texto-footer-verde m-0">Visítanos</p>
+          <p class = "texto-footer-verde m-0">Escríbenos</p>
+          <p class = "texto-footer-verde m-0">Llámanos</p>
+        </div>
+        <div class = "col-md-4 d-flex justify-content-end align-items-center">
+          <p class = "texto-footer-facebook m-0">Facebook</p>
+          <p class = "texto-footer-twitter m-0">Twitter</p>
+          <p class = "texto-footer-linkedin m-0">Linkedin</p>
+          <p class = "texto-footer-youtube m-0">Youtube</p>
+
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+</div>
+
